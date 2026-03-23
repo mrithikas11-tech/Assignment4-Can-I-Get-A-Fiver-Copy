@@ -57,8 +57,8 @@ public class SequenceHashMap {
         System.out.println("");
     }
     public static void main(String[] args) {
-        Player com1 = new Computer();
-        Player com2 = new Computer();
+        Player com1 = new Computer(new RandomStrategy());
+        Player com2 = new Computer(new RandomStrategy());
         RoundSequence rsTest = new RoundSequence(com1, com2);
         com1.makeChoice();
         com2.makeChoice();
