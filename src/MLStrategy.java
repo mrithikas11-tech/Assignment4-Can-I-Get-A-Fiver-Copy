@@ -3,11 +3,11 @@ import java.util.Set;
 
 public class MLStrategy implements Strategy {
 
-    private RoundSequence temp = new RoundSequence(null, null); 
-    private HashMap<String, SequenceHashMap> storedSequence;    
-    private final int N;                                        
-    private String key;                                         
-    private String currentSequence;                             
+    private RoundSequence temp = new RoundSequence(null, null); //access to round results
+    private HashMap<String, SequenceHashMap> storedSequence;    //round sequence stored
+    private final int N;                                        //size of saved sequence
+    private String key;                                         //last round choices with N-1 length
+    private String currentSequence;                             //last round choices with N length
 
     private final RandomStrategy random;
 
