@@ -38,9 +38,6 @@ public class MLStrategy implements Strategy {
     }
 
     @Override
-    }
-
-    @Override
     public Sign makeMove() {
         storeNSequence();
         if (temp.isEmpty()) {
