@@ -3,13 +3,12 @@ import java.util.Set;
 
 public class MLStrategy implements Strategy {
 
-    private RoundSequence temp = new RoundSequence(null, null); // Access to round results
-    private HashMap<String, SequenceHashMap> storedSequence;    // Round Sequence stored
-    private final int N;                                        // Size of saved sequence
-    private String key;                                         // Last round Choices N-1 length
-    private String currentSequence;                             // Last round choices N length
+    private RoundSequence temp = new RoundSequence(null, null); 
+    private HashMap<String, SequenceHashMap> storedSequence;    
+    private final int N;                                        
+    private String key;                                         
+    private String currentSequence;                             
 
-    // Replaces super.makeMove() from ComputerML
     private final RandomStrategy random;
 
     public MLStrategy() {
